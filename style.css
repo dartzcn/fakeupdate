@@ -1,0 +1,15 @@
+body {
+	background-color: #f4f4f4;
+	color: #333;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10pt;
+	text-align: center;
+}
+	
+a {
+	color: #007fff
+}
+
+a:hover {
+	color: #333399
+}

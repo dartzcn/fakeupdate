@@ -1,0 +1,51 @@
+<title>Welcome</title>
+<!DOCTYPE html>
+<style>
+body {
+    background: url("/fakeupdate/images/winxp.png") no-repeat center fixed;
+	background-size: cover;
+	cursor: none;
+}
+.updater {
+
+/* Formatting */
+font-family:Segoe UI, Arial;
+font-size: 21px;
+color: #fff;
+font-weight:normal;
+text-align:center;
+position: absolute;
+top: 52%;
+left: 46%;
+width:25%;
+
+/* Why god, why */
+user-select: none; 
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+</style>
+<style>
+.logo {
+
+/* Formatting */
+position: absolute;
+top: 41.5%;
+left: 50%;
+width:25%;
+text-align:center;
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- I really tried everything to avoid using JQuery for something so simple and something that's only going to be used one single time. And believe me, I tried every combination of JavaScript I could possibly think of. But standard JavaScript is simply incapable of competently detecting if Enter is being pressed, so we must use this. -->
+<body oncontextmenu="return false;">
+</body>
+<div class="logo">
+<img src="/fakeupdate/images/welcome.png"> <br>
+</div>
+<script>
+$(document).keypress(function(e) {
+    if(e.which == 13) {
+        window.location.href = '/fakeupdate/windows/bsod/xp/';
+    }
+});
+</script>
+<noscript><p><center><font color="white">Hey buddy, you have to enable JavaScript before you can prank your buddies!</p></font></center><noscript>
